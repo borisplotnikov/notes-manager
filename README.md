@@ -1,0 +1,1 @@
+Here is the work to be completed: Create root folder structure: /frontend /backend Initialize package manager workspaces (npm/yarn/pnpm) Ensure workspace linking works correctly Please breake it down to the most granular steps, no more than one sentence per step, print the first one. each time I type "next" you posting one next step.

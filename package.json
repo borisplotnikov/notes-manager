@@ -1,8 +1,0 @@
-{
-  "name": "notes-manager",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/borisplotnikov/notes-manager.git",
-  "author": "Boris Plotnikov <boriswo@gmail.com>",
-  "license": "MIT"
-}
