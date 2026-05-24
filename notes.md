@@ -33,3 +33,6 @@ notes-manager-monorepo/
 │ └── package.json
 └── shared/ # Optional folder for shared types, constants, or helpers
 └── index.ts # Future entry point for shared code
+
+Backend: 3000
+Frontend: 5173
