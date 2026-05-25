@@ -1,5 +1,5 @@
 {
-  "name": "notes-manager",
+  "name": "notes-manager-root",
   "private": true,
   "version": "1.0.0",
   "main": "index.js",
@@ -15,8 +15,8 @@
     "concurrently": "^9.2.1"
   },
   "scripts": {
-    "dev:frontend": "yarn workspace frontend dev",
-    "dev:backend": "yarn workspace backend dev",
+    "dev:frontend": "yarn workspace @notes-manager/frontend dev",
+    "dev:backend": "yarn workspace @notes-manager/backend dev",
     "dev": "concurrently \"yarn dev:frontend\" \"yarn dev:backend\"",
     "lint": "echo \"Lint placeholder\""
   }
