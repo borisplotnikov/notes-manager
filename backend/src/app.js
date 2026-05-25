@@ -11,9 +11,4 @@ app.use(express.json());
 // Routes
 app.use("./api", healthRouter); // Mounts the route at /api/health
 
-// Basic health check route
-// app.get("/api/health", (req, res) => {
-//   res.json({ status: "OK", message: "Backend is running smoothly" });
-// });
-
 export default app;
