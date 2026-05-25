@@ -1,10 +1,6 @@
 Context: building a full-stack notes app. Monorepo with separate frontend and backend workspaces. Frontend: React, Vite, Zustand, TanStack Query. Backend: Node, Express, Mongoose, MongoDB Atlas
 
 Work to be completed:
-Define standard structure rules for:
-frontend (React app structure placeholder)
-backend (Express structure placeholder)
-Add optional /shared folder placeholder (for future use)
 
 Break the work into small steps, serve one step at the time each time I type "done". One sentence per step.
 

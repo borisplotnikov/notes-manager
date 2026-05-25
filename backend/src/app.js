@@ -9,6 +9,6 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use("./api", healthRouter); // Mounts the route at /api/health
+app.use("/api", healthRouter); // Mounts the route at /api/health
 
 export default app;
