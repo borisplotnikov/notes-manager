@@ -1,11 +1,12 @@
 {
   "name": "@notes-manager/backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
