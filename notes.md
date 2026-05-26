@@ -3,11 +3,13 @@ git merge work && git push
 git push —-delete origin work && git branch -d work
 git remote prune origin && git fetch —-prune
 
-Context: building a full-stack notes app, using Yarn. Monorepo with separate frontend and backend workspaces. Frontend: React, Vite, Zustand, TanStack Query. Backend: Node, Express, Mongoose, MongoDB Atlas
+Context: building a full-stack notes app with Yarn and JavaScript. Monorepo with separate frontend and backend workspaces. Frontend: React, Vite, Zustand, TanStack Query. Backend: Node, Express, Mongoose, MongoDB Atlas
 
 Work to be completed:
 
 Break the work into small steps, serve one step at the time each time I type "done". One sentence per step.
+
+frontend environment variable access format: import.meta.env.VITE_API_URL
 
 notes-manager-monorepo/
 ├── package.json # Root package.json configuring Yarn workspaces
