@@ -1,3 +1,12 @@
+git switch main
+git fetch
+git merge work
+git branch -d work
+git push
+git push —delete origin work
+git fetch —prune
+git remote prune origin
+
 Context: building a full-stack notes app. Monorepo with separate frontend and backend workspaces. Frontend: React, Vite, Zustand, TanStack Query. Backend: Node, Express, Mongoose, MongoDB Atlas
 
 Work to be completed:
@@ -30,5 +39,5 @@ notes-manager-monorepo/
 └── shared/ # Optional folder for shared types, constants, or helpers
 └── index.ts # Future entry point for shared code
 
-Backend: 3000
+Backend: 5000
 Frontend: 5173
