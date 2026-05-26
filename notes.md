@@ -1,13 +1,9 @@
-git switch main
-git fetch
-git merge work
-git branch -d work
-git push
-git push —delete origin work
-git fetch —prune
-git remote prune origin
+git switch main && git fetch
+git merge work && git push
+git push —-delete origin work && git branch -d work
+git remote prune origin && git fetch —-prune
 
-Context: building a full-stack notes app. Monorepo with separate frontend and backend workspaces. Frontend: React, Vite, Zustand, TanStack Query. Backend: Node, Express, Mongoose, MongoDB Atlas
+Context: building a full-stack notes app, using Yarn. Monorepo with separate frontend and backend workspaces. Frontend: React, Vite, Zustand, TanStack Query. Backend: Node, Express, Mongoose, MongoDB Atlas
 
 Work to be completed:
 
