@@ -3,7 +3,7 @@ git merge work && git push
 git push —-delete origin work && git branch -d work
 git remote prune origin && git fetch —-prune
 
-Context: building a full-stack notes app with Yarn and JavaScript. Monorepo with separate frontend and backend workspaces. Frontend: React, Vite, Zustand, TanStack Query. Backend: Node, Express, Mongoose, MongoDB Atlas
+Context: building a full-stack notes app (React, Javascript, Yarn, React, Vite, Zustand, TanStack Query, Node, Express, Mongoose, MongoDB Atlas) as a monorepo with separate frontend and backend workspaces.
 
 Work to be completed:
 
