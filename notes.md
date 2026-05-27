@@ -7,7 +7,7 @@ Context: building a full-stack notes app (React, Javascript, Yarn, React, Vite, 
 
 Work to be completed:
 
-Break the work into small steps, serve one step at the time each time I type "done". One sentence per step.
+Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met. One sentence per step.
 
 frontend environment variable access format: import.meta.env.VITE_API_URL
 
