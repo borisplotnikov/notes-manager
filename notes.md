@@ -5,9 +5,9 @@ git remote prune origin && git fetch —-prune
 
 Context: building a full-stack notes app (React, Javascript, Yarn, React, Vite, Zustand, TanStack Query, Node, Express, Mongoose, MongoDB Atlas) as a monorepo with separate frontend and backend workspaces.
 
-Work to be completed:
+The story to work on:
 
-Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met. One sentence per step.
+Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 
 frontend environment variable access format: import.meta.env.VITE_API_URL
 
