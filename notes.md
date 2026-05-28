@@ -9,7 +9,7 @@ gh pr create --title --body && gh pr merge --merge --delete-branch (--fill)
 git switch main && git pull origin main
 git branch -d work && git fetch --prune (git config --global fetch.prune true)
 
-Context: building a full-stack notes app (React, Javascript, Yarn, React, Vite, Zustand, TanStack Query, Node, Express, Mongoose, MongoDB Atlas) as a monorepo with separate frontend and backend workspaces.
+Context: building a full-stack notes app as a monorepo with separate frontend and backend workspaces with latest stable stack including React, Javascript, Yarn, React, Vite, Zustand, TanStack Query, Node, Express, Mongoose, MongoDB Atlas.
 
 The story to work on:
 
