@@ -16,7 +16,11 @@ When creating a new branch, use the following prefixes depending on the nature o
 
 **Documentation:** `docs/short-description` (e.g., `docs/update-readme`)
 
-**Chore/Refactor:** `chore/short-description` (e.g., `chore/monorepo-yarn-workspaces`)
+**Chore/:** `chore/short-description` (e.g., `chore/monorepo-yarn-workspaces`)
+
+**Refactor/:** `refactor/short-description` (e.g., `refactor/monorepo-yarn-workspaces`)
+
+**setup/:** `setup/short-description` (e.g., `setup/monorepo-yarn-workspaces`)
 
 ## 2. Commit Message Convention
 
