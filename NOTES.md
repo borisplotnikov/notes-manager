@@ -3,8 +3,7 @@ git merge work && git push
 git push —-delete origin work && git branch -d work
 git remote prune origin && git fetch —-prune
 
-git fetch origin main:main
-git push origin work
+git fetch origin main:main && git push
 gh pr create --fill && gh pr merge --merge --delete-branch
 git fetch --prune
 
