@@ -5,11 +5,10 @@ git remote prune origin && git fetch —-prune
 
 git fetch origin main:main
 git push origin work
-gh pr create --title --body && gh pr merge --merge --delete-branch (--fill)
-git switch main && git pull origin main
-git branch -d work && git fetch --prune (git config --global fetch.prune true)
+gh pr create --fill && gh pr merge --merge --delete-branch
+git fetch --prune
 
-Context: building a full-stack notes app as a monorepo with separate frontend and backend workspaces with latest stable stack including React, Javascript, Yarn, React, Vite, Zustand, TanStack Query, Node, Express, Mongoose, MongoDB Atlas.
+I am building a full-stack notes app as a monorepo with separate frontend and backend workspaces with latest stable stack including React, Javascript, Yarn v4.15.0, Vite, Zustand, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas.
 
 The story to work on:
 

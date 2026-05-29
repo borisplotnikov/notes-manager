@@ -1,0 +1,12 @@
+name: CI Pipeline
+
+on:
+  pull_request:
+    branches: [main, master, develop]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
