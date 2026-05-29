@@ -31,7 +31,8 @@
     "build": "yarn build:backend && yarn build:frontend",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "echo 'No tests configured yet.'"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
