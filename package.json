@@ -28,7 +28,7 @@
     "dev": "concurrently \"yarn dev:frontend\" \"yarn dev:backend\"",
     "build:frontend": "yarn workspace @notes-manager/frontend build",
     "build:backend": "yarn workspace @notes-manager/backend build",
-    "build": "yarn build:backend && yarn build:frontend",
+    "build": "concurrently \"yarn build:frontend\" \"yarn build:backend\"",
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky",

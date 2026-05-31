@@ -9,7 +9,7 @@ git fetch --prune
 
 I am building a full-stack notes app as a monorepo with separate frontend and backend workspaces with latest stable stack including React, Javascript, Yarn v4.15.0, Vite, Zustand, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas.
 
-The story to work on:
+The user story:
 
 Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 
