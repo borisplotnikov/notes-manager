@@ -1,5 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 
+import LoginPage from "./pages/LoginPage";
+import DashboardPage from "./pages/DashboardPage";
+import SettingsPage from "./pages/SettingsPage";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -8,8 +12,9 @@ export const router = createBrowserRouter([
       return { Component: module.default };
     },
     children: [
-      // Future note routes will go here, e.g.:
-      // { path: 'notes', element: <NotesPage /> }
+      { path: "login", element: <LoginPage /> },
+      { path: "dashboard", element: <DashboardPage /> },
+      { path: "settings", element: <SettingsPage /> },
     ],
   },
 ]);
