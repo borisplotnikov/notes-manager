@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import SettingsPage from "./pages/SettingsPage";
+import AuthenticatedLayout from "./components/AuthenticatedLayout";
 
 export const router = createBrowserRouter([
   {
@@ -13,8 +14,13 @@ export const router = createBrowserRouter([
     },
     children: [
       { path: "login", element: <LoginPage /> },
-      { path: "dashboard", element: <DashboardPage /> },
-      { path: "settings", element: <SettingsPage /> },
+      {
+        element: <AuthenticatedLayout />,
+        children: [
+          { path: "dashboard", element: <DashboardPage /> },
+          { path: "settings", element: <SettingsPage /> },
+        ],
+      },
     ],
   },
 ]);
