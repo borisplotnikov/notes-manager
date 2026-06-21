@@ -8,6 +8,7 @@ import AuthenticatedLayout from "./components/AuthenticatedLayout";
 export const router = createBrowserRouter([
   {
     path: "/",
+    HydrateFallback: () => null,
     lazy: async () => {
       const { default: Component } = await import("./App");
       return { Component };

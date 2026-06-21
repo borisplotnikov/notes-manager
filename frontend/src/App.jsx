@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
     <div>
       <Outlet />
@@ -8,4 +8,6 @@ function App() {
   );
 }
 
-export default App;
+export function HydrateFallback() {
+  return <div className="p-5 text-center">Loading...</div>;
+}
