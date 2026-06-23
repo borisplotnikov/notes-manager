@@ -1,15 +1,27 @@
 import { createBrowserRouter } from "react-router-dom";
 
+import LoginPage from "./pages/LoginPage";
+import DashboardPage from "./pages/DashboardPage";
+import SettingsPage from "./pages/SettingsPage";
+import AuthenticatedLayout from "./components/AuthenticatedLayout";
+
 export const router = createBrowserRouter([
   {
     path: "/",
+    HydrateFallback: () => null,
     lazy: async () => {
-      const module = await import("./App");
-      return { Component: module.default };
+      const { default: Component } = await import("./App");
+      return { Component };
     },
     children: [
-      // Future note routes will go here, e.g.:
-      // { path: 'notes', element: <NotesPage /> }
+      { path: "login", element: <LoginPage /> },
+      {
+        element: <AuthenticatedLayout />,
+        children: [
+          { path: "dashboard", element: <DashboardPage /> },
+          { path: "settings", element: <SettingsPage /> },
+        ],
+      },
     ],
   },
 ]);

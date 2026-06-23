@@ -1,15 +1,23 @@
+gh auth status
+git switch -c WORK
+git push -u origin WORK
+
 git switch main && git fetch
-git merge work && git push
-git push —-delete origin work && git branch -d work
+git merge WORK && git push
+git push —-delete origin WORK && git branch -d WORK
 git remote prune origin && git fetch —-prune
 
 git fetch origin main:main && git push
 gh pr create --fill && gh pr merge --merge --delete-branch
 git fetch --prune
 
-I am building a full-stack notes app as a monorepo with separate frontend and backend workspaces with latest stable stack including React, Javascript, Yarn v4.15.0, Vite, Zustand, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas.
+Context:
+The project: full-stack notes app
+Structure: monorepo with separate frontend and backend workspaces
+Stack: React, Bootstrap, react-bootstrap, Javascript, Yarn v4.15.0, Vite, Zustand, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas
+Gen: latest stable
 
-The user story:
+The task:
 
 Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 
