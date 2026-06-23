@@ -14,7 +14,7 @@ git fetch --prune
 Context:
 The project: full-stack notes app
 Structure: monorepo with separate frontend and backend workspaces
-Stack: React, Bootstrap, react-bootstrap, Javascript, Yarn v4.15.0, Vite, Zustand, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas
+Stack: React, Bootstrap, react-bootstrap, React Router v7, Javascript, Yarn v4.15.0, Vite, Zustand, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas
 Gen: latest stable
 
 The task:
