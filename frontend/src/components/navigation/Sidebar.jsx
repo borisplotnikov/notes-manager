@@ -1,8 +1,13 @@
 import { NavLink } from "react-router-dom";
+import useUiStore from "../../stores/useUiStore";
+import "./Sidebar.css";
 
 export default function Sidebar() {
+  const { isSidebarCollapsed } = useUiStore();
   return (
-    <aside className="bg-light border-end p-3" style={{ width: "240px" }}>
+    <aside
+      className={`bg-light border-end sidebar-transition ${isSidebarCollapsed ? "sidebar-collapsed" : "sidebar-expanded"}`}
+    >
       <ul className="nav flex-column">
         <li className="nav-item">
           <NavLink

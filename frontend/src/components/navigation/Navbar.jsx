@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import useUiStore from "../../stores/useUiStore";
 import {
   Container,
   Nav,
@@ -9,6 +10,8 @@ import {
 } from "react-bootstrap";
 
 export default function AppNavbar() {
+  const { toggleSidebar } = useUiStore();
+
   return (
     <Navbar
       bg="dark"
@@ -17,6 +20,14 @@ export default function AppNavbar() {
       data-bs-theme="dark"
     >
       <Container fluid>
+        <Button
+          variant="outline-light"
+          className="me-2 d-none d-md-inline-block"
+          onClick={toggleSidebar}
+          aria-label="Toggle Sidebar"
+        >
+          ☰
+        </Button>
         <Navbar.Brand as={NavLink} to="/dashboard">
           NotesApp
         </Navbar.Brand>
