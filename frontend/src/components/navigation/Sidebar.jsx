@@ -3,7 +3,7 @@ import useUiStore from "../../stores/useUiStore";
 import "./Sidebar.css";
 
 export default function Sidebar() {
-  const { isSidebarCollapsed } = useUiStore();
+  const isSidebarCollapsed = useUiStore((state) => state.isSidebarCollapsed);
   return (
     <aside
       className={`bg-light border-end sidebar-transition ${isSidebarCollapsed ? "sidebar-collapsed" : "sidebar-expanded"}`}

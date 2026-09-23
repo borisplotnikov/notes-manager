@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 
 export default function AppNavbar() {
-  const { toggleSidebar } = useUiStore();
+  const toggleSidebar = useUiStore((state) => state.toggleSidebar);
 
   return (
     <Navbar
