@@ -51,3 +51,4 @@ notes-manager-monorepo/
 
 Backend: 5000
 Frontend: 5173
+yarn build + yarn vite preview --host
