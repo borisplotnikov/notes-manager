@@ -1,0 +1,18 @@
+.sidebar-transition {
+  transition:
+    width 0.3s ease,
+    padding 0.3s ease;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.sidebar-expanded {
+  width: 240px;
+  padding: 1rem; /* Equivalent to Bootstrap's p-3 */
+}
+
+.sidebar-collapsed {
+  width: 0;
+  padding: 1rem 0; /* Keeps vertical layout but zeroes out horizontal padding/width */
+  border-inline-end-width: 0 !important; /* Hides the border when collapsed */
+}
