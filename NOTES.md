@@ -1,8 +1,8 @@
 gh auth status
-git switch -c WORK
-git push -u origin WORK
+git switch -c WORK (create and switch to)
+git push -u origin WORK (push) (create push to it and track the local)
 
-git switch main && git fetch
+git switch main && git fetch (switch and update the tracking)
 git merge WORK && git push
 git push —-delete origin WORK && git branch -d WORK
 git remote prune origin && git fetch —-prune
