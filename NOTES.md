@@ -17,7 +17,24 @@ Structure: monorepo with separate frontend and backend workspaces
 Stack: React, Bootstrap, react-bootstrap, React Router v7, Javascript, Yarn v4.15.0, Vite, Zustand, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas
 Gen: latest stable
 
-The task:
+The Epic: Frontend Application Architecture
+
+The Story: As a developer, I want a unified API client and caching layer so that data fetching is efficient, predictable, and handled uniformly across the app.
+
+The Sprint: Configure API Client Layer & Async Data Fetching (TanStack Query)
+
+The Task: Configure the frontend environment variable for the backend API URL
+The frontend can access the backend API base URL through Vite environment configuration.
+
+Acceptance Criteria:
+
+A Vite-compatible environment variable is defined for the backend API URL.
+
+The frontend can access the value through import.meta.env.
+
+The backend URL is not hardcoded in application code.
+
+The environment configuration follows the project's existing frontend configuration conventions.
 
 Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 
