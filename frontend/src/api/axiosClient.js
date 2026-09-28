@@ -29,4 +29,5 @@ apiClient.interceptors.response.use(
   },
 );
 
+// Use apiClient for all backend HTTP requests; pass relative paths only.
 export default apiClient;
