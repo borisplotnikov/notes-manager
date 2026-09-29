@@ -14,27 +14,28 @@ git fetch --prune
 Context:
 The project: full-stack notes app
 Structure: monorepo with separate frontend and backend workspaces
-Stack: React, Bootstrap, react-bootstrap, React Router v7, Javascript, Yarn v4.15.0, Vite, Zustand, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas
+Stack: React, Bootstrap, react-bootstrap, React Router v7, Javascript, Yarn v4.15.0, Vite, Zustand, Fetch, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas
 Gen: latest stable
 
-The Epic: Frontend Application Architecture
+Epic: Frontend Application Architecture
 
-The Story: As a developer, I want a unified API client and caching layer so that data fetching is efficient, predictable, and handled uniformly across the app.
+Story: As a developer, I want a unified API client and caching layer so that data fetching is efficient, predictable, and handled uniformly across the app.
 
-The Sprint: Configure API Client Layer & Async Data Fetching (TanStack Query)
+Sprint: Configure API Client Layer & Async Data Fetching (TanStack Query)
 
-The Task: Configure the frontend environment variable for the backend API URL
-The frontend can access the backend API base URL through Vite environment configuration.
+Task: Add authentication-header injection to the API client
+
+Milestone: The API client automatically adds authentication credentials to requests when credentials are available.
 
 Acceptance Criteria:
 
-A Vite-compatible environment variable is defined for the backend API URL.
+The API client obtains the authentication credential from the application's auth source.
 
-The frontend can access the value through import.meta.env.
+The appropriate authentication header is added to authenticated requests.
 
-The backend URL is not hardcoded in application code.
+Requests without authentication credentials do not receive an invalid authentication header.
 
-The environment configuration follows the project's existing frontend configuration conventions.
+Individual API calls do not need to manually construct authentication headers.
 
 Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 
