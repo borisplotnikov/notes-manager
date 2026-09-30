@@ -19,23 +19,27 @@ Gen: latest stable
 
 Epic: Frontend Application Architecture
 
-Story: As a developer, I want a unified API client and caching layer so that data fetching is efficient, predictable, and handled uniformly across the app.
+Story: As a user I want a modern and simple frontend so it would be easy to navigate and use.
 
-Sprint: Configure API Client Layer & Async Data Fetching (TanStack Query)
+Task: Define the Core Ui Component Scope
 
-Task: Very that TanStack Query is correctly providing caching and async data-fetching infrastructure.
+Acceptance criteria:
 
-Acceptance Criteria:
+Identify recurring UI patterns required by the frontend application.
 
-A component can fetch API data using a TanStack Query hook.
+Define the distinction between:
 
-The query exposes loading and error states.
+Core UI components
 
-Successfully fetched data is stored in the TanStack Query cache.
+Layout components
 
-Reusing the same query key can retrieve cached data according to the configured query defaults.
+Notes/domain-specific components
 
-The data-fetching implementation uses the centralized API client rather than calling fetch directly.
+Page-level components
+
+Establish naming and organization conventions for reusable components.
+
+Confirm that Bootstrap/react-bootstrap remains the underlying UI toolkit.
 
 Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 
