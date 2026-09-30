@@ -23,19 +23,19 @@ Story: As a developer, I want a unified API client and caching layer so that dat
 
 Sprint: Configure API Client Layer & Async Data Fetching (TanStack Query)
 
-Task: Add authentication-header injection to the API client
-
-Milestone: The API client automatically adds authentication credentials to requests when credentials are available.
+Task: Very that TanStack Query is correctly providing caching and async data-fetching infrastructure.
 
 Acceptance Criteria:
 
-The API client obtains the authentication credential from the application's auth source.
+A component can fetch API data using a TanStack Query hook.
 
-The appropriate authentication header is added to authenticated requests.
+The query exposes loading and error states.
 
-Requests without authentication credentials do not receive an invalid authentication header.
+Successfully fetched data is stored in the TanStack Query cache.
 
-Individual API calls do not need to manually construct authentication headers.
+Reusing the same query key can retrieve cached data according to the configured query defaults.
+
+The data-fetching implementation uses the centralized API client rather than calling fetch directly.
 
 Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 
