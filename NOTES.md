@@ -1,8 +1,8 @@
 gh auth status
-git switch -c WORK
-git push -u origin WORK
+git switch -c WORK (create and switch to)
+git push -u origin WORK (push) (create push to it and track the local)
 
-git switch main && git fetch
+git switch main && git fetch (switch and update the tracking)
 git merge WORK && git push
 git push —-delete origin WORK && git branch -d WORK
 git remote prune origin && git fetch —-prune
@@ -14,10 +14,32 @@ git fetch --prune
 Context:
 The project: full-stack notes app
 Structure: monorepo with separate frontend and backend workspaces
-Stack: React, Bootstrap, react-bootstrap, React Router v7, Javascript, Yarn v4.15.0, Vite, Zustand, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas
+Stack: React, Bootstrap, react-bootstrap, React Router v7, Javascript, Yarn v4.15.0, Vite, Zustand, Fetch, TanStack Query, Node v25.9.0, Express, Mongoose, MongoDB Atlas
 Gen: latest stable
 
-The task:
+Epic: Frontend Application Architecture
+
+Story: As a user I want a modern and simple frontend so it would be easy to navigate and use.
+
+Task: Define the Core Ui Component Scope
+
+Acceptance criteria:
+
+Identify recurring UI patterns required by the frontend application.
+
+Define the distinction between:
+
+Core UI components
+
+Layout components
+
+Notes/domain-specific components
+
+Page-level components
+
+Establish naming and organization conventions for reusable components.
+
+Confirm that Bootstrap/react-bootstrap remains the underlying UI toolkit.
 
 Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 
