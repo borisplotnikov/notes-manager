@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import useUiStore from "../../stores/useUiStore";
+import { useUiStore } from "../../stores";
 import {
   Container,
   Nav,

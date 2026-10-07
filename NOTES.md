@@ -21,23 +21,29 @@ Epic: Frontend Application Architecture
 
 Story: As a user, I want a modern and simple frontend so I can easy use and navigate it.
 
-Task: Establish the UI Component Directory Structure
+Task: Establish Shared UI Conventions
 
 Acceptance criteria:
 
 Create the directory structure for reusable UI components.
 
-Establish appropriate locations for:
+Define application-wide conventions for:
 
-Core UI primitives
+Colors and variants
 
-Layout components
+Spacing
 
-Component styles, where required
+Sizing
 
-Shared component utilities
+Typography
 
-Establish a consistent export strategy for reusable components.
+Borders and radii
+
+Responsive behavior
+
+Disabled, loading, hover, focus, and error states
+
+Determine which conventions should rely directly on Bootstrap and which should be customized for the application.
 
 Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 

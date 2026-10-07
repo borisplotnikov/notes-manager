@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../navigation/Navbar";
-import Sidebar from "../navigation/Sidebar";
+import { Navbar, Sidebar } from "../navigation";
 
 export default function AuthenticatedLayout() {
   return (

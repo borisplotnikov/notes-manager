@@ -1,0 +1,23 @@
+:root {
+  /* Application colors */
+  --app-primary: #0d6efd;
+  --app-secondary: #6c757d;
+  --app-success: #198754;
+  --app-danger: #dc3545;
+  --app-warning: #ffc107;
+  --app-info: #0dcaf0;
+
+  /* Surfaces */
+  --app-background: #f8f9fa;
+  --app-surface: #ffffff;
+  --app-surface-muted: #f1f3f5;
+
+  /* Text */
+  --app-text: #212529;
+  --app-text-muted: #6c757d;
+  --app-text-inverse: #ffffff;
+
+  /* Borders */
+  --app-border: #dee2e6;
+  --app-border-focus: #86b7fe;
+}
