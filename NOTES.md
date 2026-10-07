@@ -19,27 +19,25 @@ Gen: latest stable
 
 Epic: Frontend Application Architecture
 
-Story: As a user I want a modern and simple frontend so it would be easy to navigate and use.
+Story: As a user, I want a modern and simple frontend so I can easy use and navigate it.
 
-Task: Define the Core Ui Component Scope
+Task: Establish the UI Component Directory Structure
 
 Acceptance criteria:
 
-Identify recurring UI patterns required by the frontend application.
+Create the directory structure for reusable UI components.
 
-Define the distinction between:
+Establish appropriate locations for:
 
-Core UI components
+Core UI primitives
 
 Layout components
 
-Notes/domain-specific components
+Component styles, where required
 
-Page-level components
+Shared component utilities
 
-Establish naming and organization conventions for reusable components.
-
-Confirm that Bootstrap/react-bootstrap remains the underlying UI toolkit.
+Establish a consistent export strategy for reusable components.
 
 Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 

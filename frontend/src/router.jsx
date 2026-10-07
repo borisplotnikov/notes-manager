@@ -4,7 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import SettingsPage from "./pages/SettingsPage";
 import AuthenticatedLayout from "./components/layout/AuthenticatedLayout";
-import ProtectedRoute from "./components/layout/ProtectedRoute";
+import ProtectedRoute from "./components/routing/ProtectedRoute";
 
 export const router = createBrowserRouter([
   {
