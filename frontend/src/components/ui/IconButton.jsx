@@ -1,10 +1,11 @@
 import BootstrapButton from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
-import "./Button.css";
+import "./IconButton.css";
 
-export default function Button({
-  children,
-  variant = "primary",
+export default function IconButton({
+  icon,
+  label,
+  variant = "outline-secondary",
   size,
   disabled = false,
   loading = false,
@@ -18,37 +19,33 @@ export default function Button({
       size={size}
       type={type}
       disabled={disabled || loading}
-      className={className}
+      aria-label={label}
       aria-busy={loading || undefined}
+      className={className}
       {...props}
     >
-      {loading && (
+      {loading ? (
         <Spinner
-          as="span"
           animation="border"
           size="sm"
           role="status"
           aria-label="Loading"
-          className="me-2"
         />
+      ) : (
+        icon
       )}
-      {children}
     </BootstrapButton>
   );
 }
 
-// Example usage:
+// Example usage with an icon library such as react-icons:
 
-// import Button from "./components/ui/Button";
+// import { FaTrash } from "react-icons/fa";
+// import IconButton from "./components/ui/IconButton";
 
-// <Button onClick={handleSave}>Save</Button>
-
-// <Button variant="secondary" size="sm">
-//   Cancel
-// </Button>
-
-// <Button loading>Saving...</Button>
-
-// <Button variant="danger" disabled>
-//   Delete
-// </Button>
+// <IconButton
+//   icon={<FaTrash aria-hidden="true" />}
+//   label="Delete note"
+//   variant="outline-danger"
+//   onClick={handleDelete}
+// />

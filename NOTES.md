@@ -21,29 +21,19 @@ Epic: Frontend Application Architecture
 
 Story: As a user, I want a modern and simple frontend so I can easy use and navigate it.
 
-Task: Establish Shared UI Conventions
+Task: Build Core Action Components
 
 Acceptance criteria:
 
-Create the directory structure for reusable UI components.
+Implement reusable button components/patterns.
 
-Define application-wide conventions for:
+Support the application's required variants and sizes.
 
-Colors and variants
+Support disabled and loading states where appropriate.
 
-Spacing
+Implement an icon-button pattern if icons are used by the application.
 
-Sizing
-
-Typography
-
-Borders and radii
-
-Responsive behavior
-
-Disabled, loading, hover, focus, and error states
-
-Determine which conventions should rely directly on Bootstrap and which should be customized for the application.
+Ensure interactive controls have appropriate accessibility semantics.
 
 Break the work into small steps, serve one step each time I type "done" till the acceptance criteria met, one sentence per step.
 

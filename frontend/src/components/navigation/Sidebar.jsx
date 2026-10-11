@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useUiStore } from "../../stores";
+import { FaTrash } from "react-icons/fa";
+import { Button, IconButton } from "../ui";
 import "./Sidebar.css";
 
 export default function Sidebar() {
@@ -34,6 +36,19 @@ export default function Sidebar() {
           >
             Logout
           </NavLink>
+        </li>
+        <li className="nav-item">
+          <Button variant="secondary" size="sm" disabled>
+            Cancel
+          </Button>
+        </li>
+        <li className="nav-item">
+          <IconButton
+            icon={<FaTrash aria-hidden="true" />}
+            label="Icon Button"
+            variant="outline-danger"
+            onClick={console.log("Icon Button")}
+          />
         </li>
       </ul>
     </aside>
