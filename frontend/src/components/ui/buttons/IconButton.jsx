@@ -1,6 +1,6 @@
 import BootstrapButton from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
-import "./IconButton.css";
+import styles from "./IconButton.module.css";
 
 export default function IconButton({
   icon,
@@ -21,7 +21,7 @@ export default function IconButton({
       disabled={disabled || loading}
       aria-label={label}
       aria-busy={loading || undefined}
-      className={className}
+      className={`${styles.iconButton} ${className}`.trim()}
       {...props}
     >
       {loading ? (

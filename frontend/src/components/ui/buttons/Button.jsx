@@ -1,6 +1,6 @@
 import BootstrapButton from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
-import "./Button.css";
+import styles from "./Button.module.css";
 
 export default function Button({
   children,
@@ -18,7 +18,7 @@ export default function Button({
       size={size}
       type={type}
       disabled={disabled || loading}
-      className={className}
+      className={`${styles.Button} ${className}`.trim()}
       aria-busy={loading || undefined}
       {...props}
     >
